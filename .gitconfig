@@ -1,0 +1,14 @@
+[user]
+    name = Magnus Hörberg
+    email = magnus.hoerberg@gmail.com
+[color]
+    diff = auto
+    interactive = auto
+    status = auto
+    branch = auto
+[alias]
+    st = status
+    cb = checkout -b
+    co = checkout
+    di = diff
+    cm = commit -m
