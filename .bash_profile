@@ -20,9 +20,6 @@ PS1='\W$(__git_ps1 " (%s)")\$ '
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
-export BB_USER="magnus.hoerberg@gmail.com"
-export BB_PASS="4vnQQqGXerVeKJ?GoTee7d?"
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
