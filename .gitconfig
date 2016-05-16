@@ -1,6 +1,7 @@
 [user]
     name = Magnus Hörberg
     email = magnus.hoerberg@gmail.com
+	signingkey = FEB2556F
 [color]
     diff = auto
     interactive = auto
@@ -11,4 +12,9 @@
     cb = checkout -b
     co = checkout
     di = diff
-    cm = commit -m
+    dic = diff --cached
+    cm = commit -S -m
+    lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    pom = pull --rebase origin master
+[push]
+	default = simple
