@@ -1,8 +1,6 @@
 " This is Gary Bernhardt's .vimrc file forked and edited by Magnus Hörberg
 " vim:set ts=2 sts=2 sw=2 expandtab:
 
-call pathogen#incubate()
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -161,6 +159,33 @@ map <leader>n :call RenameFile()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:CommandTWildIgnore=&wildignore . ",**/Godeps/*"
 let g:CommandTWildIgnore=&wildignore . ",**/target/*"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ALE options
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Write this in your vimrc file
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+" You can disable this option too
+" if you don't want linters to run on opening a file
+" let g:ale_lint_on_enter = 0
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop'],
+\   'go': ['gofmt', 'golint', 'go vet'],
+\}
+
+let g:ale_fix_on_save = 1
+
+let g:ale_fixers = {
+\   'go': ['gofmt']
+\}
+
+" Fast move between lint errors
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP options
