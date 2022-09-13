@@ -11,6 +11,7 @@
     st = status
     cb = checkout -b
     co = checkout
+    ci = commit -v
     di = diff
     dic = diff --cached
     cm = commit -S -m

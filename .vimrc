@@ -101,7 +101,8 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>y "*y
+map <leader>y "+y
+map <leader>p "+p
 map <leader>a :!rubocop %<cr>
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
