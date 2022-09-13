@@ -9,4 +9,5 @@ mkdir -p ~/.vim/pack/plugins/start
 git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/pack/plugins/start/ctrlp
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 git clone --depth 1 https://github.com/sheerun/vim-polyglot ~/.vim/pack/plugins/start/vim-polyglot
+git clone --depth 1 https://github.com/jremmen/vim-ripgrep ~/.vim/pack/plugins/start/vim-ripgrep
 ```
