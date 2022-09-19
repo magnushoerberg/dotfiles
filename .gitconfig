@@ -8,9 +8,10 @@
     status = auto
     branch = auto
 [alias]
+    pr = pull --rebase
     st = status
     cb = checkout -b
-    co = checkout
+    ch = checkout
     ci = commit -v
     di = diff
     dic = diff --cached

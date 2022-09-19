@@ -4,6 +4,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nu rnu
 set nocompatible
 " allow unsaved background buffers and remember marks/undo for them
 set hidden
@@ -118,6 +119,7 @@ imap <c-c> <esc>
 nnoremap <leader><leader> <c-^>
 map <leader>c z=
 map <leader>s :set spell!<cr>
+map <leader>f :Rg <cword>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
@@ -175,12 +177,13 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'ruby': ['rubocop'],
 \   'go': ['gofmt', 'golint', 'go vet'],
+\   'crystal': ['ameba'],
 \}
 
 let g:ale_fix_on_save = 1
 
 let g:ale_fixers = {
-\   'go': ['gofmt']
+\   'go': ['gofmt'],
 \}
 
 " Fast move between lint errors
